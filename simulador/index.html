@@ -130,7 +130,7 @@
             </div>
          </div>
          <div class="nav-item dropdown">
-            <a
+            <a 
                href="#"
                class="nav-link dropdown-toggle"
                data-toggle="dropdown"
@@ -370,16 +370,48 @@
         </p>
       </div>
     </div>
-    <!-- copyright section end -->
-    <!-- Javascript files-->
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/jquery-3.0.0.min.js"></script>
-    <script src="../js/plugin.js"></script>
-    <!-- sidebar -->
-    <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="../js/custom.js"></script>
-    <!-- javascript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+         // Get all the dropdown elements
+         let dropdowns = document.querySelectorAll('.dropdown');
+       
+         // Add click event listener to each dropdown element
+         dropdowns.forEach(function(dropdown) {
+           dropdown.addEventListener('click', function(event) {
+             // Remove 'show' class from all dropdown-menu elements
+             dropdowns.forEach(function(innerDropdown) {
+               let innerDropdownMenu = innerDropdown.querySelector('.dropdown-menu');
+               if (innerDropdownMenu) {
+                 innerDropdownMenu.classList.remove('show');
+               }
+             });
+       
+             // Get the child with the class 'dropdown-menu' of the clicked dropdown
+             let dropdownMenu = event.currentTarget.querySelector('.dropdown-menu');
+       
+             // Toggle the 'show' class on the dropdown menu
+             if (dropdownMenu) {
+               dropdownMenu.classList.toggle('show');
+             }
+       
+             // Stop the event from propagating further
+             event.stopPropagation();
+           });
+         });
+       
+         // Close the dropdown if clicked outside
+         document.addEventListener('click', function() {
+           dropdowns.forEach(function(dropdown) {
+             let dropdownMenu = dropdown.querySelector('.dropdown-menu');
+             if (dropdownMenu) {
+               dropdownMenu.classList.remove('show');
+             }
+           });
+         });
+       });
+       
+       
+    </script>
+  
   </body>
 </html>
