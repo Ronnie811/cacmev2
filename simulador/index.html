@@ -9,7 +9,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
     <title>CACME - Cooperativa de ahorro y crédito</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -34,6 +34,17 @@
     />
     <script defer="defer" src="static/js/main.d94cd02f.js"></script>
     <link href="static/css/main.3df21501.css" rel="stylesheet" />
+    <style>
+      .dropdown-submenu {
+        position: relative;
+      }
+      
+      .dropdown-submenu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+      }
+   </style>
   </head>
 
   <body>
@@ -94,89 +105,87 @@
       </div>
     </nav>
     <!-- header section start -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="logo">
-         <a href="../index.html"><img src="../images/LOGO_CACME.jpg" /></a>
+        <a href="../index.html"><img src="../images/LOGO_CACME.jpg" /></a>
       </div>
       <button
-         class="navbar-toggler"
-         type="button"
-         data-toggle="collapse"
-         data-target="#navbarSupportedContent"
-         aria-controls="navbarSupportedContent"
-         aria-expanded="false"
-         aria-label="Toggle navigation"
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-         <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav mr-auto">
-         <li class="nav-item active">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
             <a class="nav-link" href="../index.html">Inicio</a>
-         </li>
-         <div class="nav-item dropdown">
-            <a
-               href="#"
-               class="nav-link dropdown-toggle"
-               data-toggle="dropdown"
-               >Nosotros</a
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Nosotros</a
             >
             <div class="dropdown-menu border-0 rounded-0 m-0">
-               <a href="../quien.html" class="dropdown-item">Quienes somos</a>
-               <a href="../mision.html" class="dropdown-item"
-               >Misión y Visión</a
-               >
+              <a href="../quien.html" class="dropdown-item">Quienes somos</a>
+              <a href="../mision.html" class="dropdown-item">Misión y Visión</a>
             </div>
-         </div>
-         <div class="nav-item dropdown">
-            <a 
-               href="#"
-               class="nav-link dropdown-toggle"
-               data-toggle="dropdown"
-               >Productos</a
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Productos</a
             >
-            <div class="dropdown-menu border-0 rounded-0 m-0">
-               <a href="../ahorros.html" class="dropdown-item">Ahorros</a>
+            <ul class="dropdown-menu border-0 rounded-0 m-0">
+               <li class="dropdown-submenu">
+                  <a
+                      class="dropdown-item submenu-item dropdown-toggle"
+                      href="#"
+                      >Ahorros</a
+                    >
+                  <ul class="dropdown-menu">
+                     <li>
+                       <a class="dropdown-item" href="../ahorroVista.html">Ahorro a la vista</a>
+                     </li>
+                     <li>
+                       <a class="dropdown-item" href="../ahorroFuturo.html">Ahorro futuro</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#">Inversiones</a></li>
+                   </ul>
+                </li>
 
-               <a href="index.html" class="dropdown-item"
-               >Simulador ahorro programado</a
-               >
-               <a href="../mision.html" class="dropdown-item">Inversiones</a>
-               <a href="../mision.html" class="dropdown-item">Crédito</a>
-            </div>
-         </div>
-         <div class="nav-item dropdown">
-            <a
-               href="#"
-               class="nav-link dropdown-toggle"
-               data-toggle="dropdown"
-               >Servicios</a
+              <li><a href="index.html" class="dropdown-item"
+                >Simulador ahorro programado</a
+              ></li>
+              <li><a href="../mision.html" class="dropdown-item">Inversiones</a></li>
+              <li><a href="../mision.html" class="dropdown-item">Crédito</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Servicios</a
             >
             <div class="dropdown-menu border-0 rounded-0 m-0">
-               <a href="../quien.html" class="dropdown-item">Red facilito</a>
+              <a href="../quien.html" class="dropdown-item">Red facilito</a>
             </div>
-         </div>
-         <div class="nav-item dropdown">
-            <a
-               href="#"
-               class="nav-link dropdown-toggle"
-               data-toggle="dropdown"
-               >Canales</a
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >Canales</a
             >
             <div class="dropdown-menu border-0 rounded-0 m-0">
-               <a href="../quien.html" class="dropdown-item">Cacme móvil</a>
+              <a href="../quien.html" class="dropdown-item">Cacme móvil</a>
             </div>
-         </div>
-         <li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="../agencias.html">Agencias</a>
-         </li>
-         <!--li class="nav-item">
-               <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
-            </li-->
-         </ul>
+          </li>
+        </ul>
       </div>
-   </nav>
-     
+    </nav>
+
     <!-- banner section end -->
     <div id="root">Cotizador</div>
     <!-- knowledge section end -->
@@ -297,47 +306,60 @@
       </div>
     </div>
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-         // Get all the dropdown elements
-         let dropdowns = document.querySelectorAll('.dropdown');
-       
-         // Add click event listener to each dropdown element
-         dropdowns.forEach(function(dropdown) {
-           dropdown.addEventListener('click', function(event) {
-             // Remove 'show' class from all dropdown-menu elements
-             dropdowns.forEach(function(innerDropdown) {
-               let innerDropdownMenu = innerDropdown.querySelector('.dropdown-menu');
-               if (innerDropdownMenu) {
-                 innerDropdownMenu.classList.remove('show');
-               }
-             });
-       
-             // Get the child with the class 'dropdown-menu' of the clicked dropdown
-             let dropdownMenu = event.currentTarget.querySelector('.dropdown-menu');
-       
-             // Toggle the 'show' class on the dropdown menu
-             if (dropdownMenu) {
-               dropdownMenu.classList.toggle('show');
-             }
-       
-             // Stop the event from propagating further
-             event.stopPropagation();
-           });
-         });
-       
-         // Close the dropdown if clicked outside
-         document.addEventListener('click', function() {
-           dropdowns.forEach(function(dropdown) {
-             let dropdownMenu = dropdown.querySelector('.dropdown-menu');
-             if (dropdownMenu) {
-               dropdownMenu.classList.remove('show');
-             }
-           });
-         });
-       });
-       
-       
+      
+      document.addEventListener("DOMContentLoaded", function () {
+         var submenuItems = document.querySelectorAll(".dropdown-submenu .submenu-item");
+        submenuItems.forEach(function(item) {
+            item.addEventListener("click", function(e) {
+                var nextUl = item.nextElementSibling;
+                if (nextUl.classList.contains('show')) {
+                    nextUl.classList.remove('show');
+                } else {
+                    nextUl.classList.add('show');
+                }
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+        // Get all the dropdown elements
+        let dropdowns = document.querySelectorAll(".dropdown");
+
+        // Add click event listener to each dropdown element
+        dropdowns.forEach(function (dropdown) {
+          dropdown.addEventListener("click", function (event) {
+            // Remove 'show' class from all dropdown-menu elements
+            dropdowns.forEach(function (innerDropdown) {
+              let innerDropdownMenu =
+                innerDropdown.querySelector(".dropdown-menu");
+              if (innerDropdownMenu) {
+                innerDropdownMenu.classList.remove("show");
+              }
+            });
+
+            // Get the child with the class 'dropdown-menu' of the clicked dropdown
+            let dropdownMenu =
+              event.currentTarget.querySelector(".dropdown-menu");
+
+            // Toggle the 'show' class on the dropdown menu
+            if (dropdownMenu) {
+              dropdownMenu.classList.toggle("show");
+            }
+
+            // Stop the event from propagating further
+            event.stopPropagation();
+          });
+        });
+
+        // Close the dropdown if clicked outside
+        document.addEventListener("click", function () {
+          dropdowns.forEach(function (dropdown) {
+            let dropdownMenu = dropdown.querySelector(".dropdown-menu");
+            if (dropdownMenu) {
+              dropdownMenu.classList.remove("show");
+            }
+          });
+        });
+      });
     </script>
-  
   </body>
 </html>
