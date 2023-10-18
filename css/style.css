@@ -270,7 +270,7 @@ button {
     width: 100%;
     float: left;
     font-size: 60px;
-    color: #15e4d0;
+    color: #21273c;
     font-weight: bold;
     line-height: 60px;
     padding-top: 120px;
@@ -433,7 +433,7 @@ button {
 }
 
 .image_main {
-    width: 100%;
+    width: 50%;
     position: relative;
 }
 
@@ -447,13 +447,12 @@ button {
     right: initial;
     z-index: -1;
     margin: 0 auto;
-    top: -40px;
+    top: 0px;
 }
 
 .main {
     width: 100%;
-    margin: 40px 0px 0px 40px;
-    box-shadow: 0px 0px 14px 2px #f3f3f3;
+    margin: 0px 0px 0px 0px;
     position: relative;
 }
 
@@ -465,7 +464,7 @@ button {
     left: 0px;
     right: 0px;
     top: 0px;
-    width: 100%;
+    width: 0%;
     height: 100%;
     display: none;
 }
