@@ -987,7 +987,7 @@ input.Enter_text::placeholder {
     float: left;
     font-size: 18px;
     color: #ffffff;
-    background-color: #19e9d9;
+    background-color: #f2e47b;
     text-align: center;
     padding: 7px 0px;
     text-transform: uppercase;
@@ -1035,4 +1035,8 @@ input.Enter_text::placeholder {
 
 .margin_90 {
     margin: 90px 0px;
+}
+
+.counterClass{
+    float: right;
 }
