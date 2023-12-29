@@ -127,7 +127,7 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1399px) {
     .navbar {
         padding: .5rem 30px;
     }
@@ -174,7 +174,7 @@
         width: 40%;
     }
     .logo {
-    width: 24%;
+    width: 64%;
     float: left;
 }
 }
@@ -219,6 +219,8 @@
     }
     .image_1 {
         padding-top: 30px;
+        height: 60%;
+        width: 40%;
     }
     .health_taital {
         font-size: 34px;
@@ -364,6 +366,8 @@
     }
     .image_1 {
         padding-top: 30px;
+        height: 60%;
+        width: 40%;
     }
     .health_taital {
         font-size: 34px;
@@ -509,6 +513,8 @@
     }
     .image_1 {
         padding-top: 30px;
+        height: 60%;
+        width: 40%;
     }
     .health_taital {
         font-size: 19px;

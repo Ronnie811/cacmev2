@@ -233,6 +233,11 @@ button {
     float: left;
 }
 
+.logoEnLinea {
+  width: 9%;
+  float: right;
+}
+
 .bg-light {
     background-color: transparent !important;
 }
@@ -988,7 +993,7 @@ input.Enter_text::placeholder {
     float: left;
     font-size: 18px;
     color: #ffffff;
-    background-color: #19e9d9;
+    background-color: #f2e47b;
     text-align: center;
     padding: 7px 0px;
     text-transform: uppercase;
