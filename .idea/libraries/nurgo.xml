@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nurgo">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/backup/nurgo.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
